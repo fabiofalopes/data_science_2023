@@ -1,0 +1,3 @@
+https://www.statlearning.com/resources-python 
+
+ISLP - An Introduction to Statistical Learning in Python
