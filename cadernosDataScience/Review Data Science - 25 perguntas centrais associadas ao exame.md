@@ -1,5 +1,5 @@
 ## 1. **Por que queremos realizar testes estatísticos nos coeficientes de um modelo linear?**
-*Resposta*: Realizamos testes estatísticos nos coeficientes de um modelo linear para determinar se os mesmos têm um impacto significativo na variável dependente. Isto ajuda a entender quais variáveis independentes influenciam a variável de resposta e se essa influência é estatisticamente significativa.
+*Resposta*: Realizamos testes estatísticos nos coeficientes de um modelo linear **para determinar se os mesmos têm um impacto significativo na variável dependente**. Isto ajuda a entender quais variáveis independentes influenciam a variável de resposta e se essa influência é estatisticamente significativa.
 
 ## 2. **O que é um teste estatístico?**
 *Resposta*: Um teste estatístico é um procedimento que permite tomar decisões sobre uma população com base em amostras dessa população (dados). Utiliza-se para testar uma hipótese e determinar a probabilidade de obter os resultados observados, sob a suposição de que a hipótese nula é verdadeira.

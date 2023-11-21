@@ -68,10 +68,6 @@ sabendo que nao podemos usar regressao linear
 
 Sigmoid = 1/(1 + e^(-z))
 
-
-
-
-
 -- - - - - - -
 
 Prompt Summary of this class:
@@ -89,9 +85,9 @@ Na aula teórica de Data Science do dia 31 de Outubro de 2023, foram abordados o
 5. **Erro Padrão Residual (RSE)**: Refere-se à expectativa de quão distante os resultados das previsões podem estar do alvo real.
     
 6. **Problemas de Classificação**: Foi discutido um exemplo de classificação de vinhos, onde a idade (jovem ou velho) e o sabor (madeira ou frutado) foram usados como variáveis. Utilizou-se um classificador binário (1,0) para categorizar os resultados como "happy" ou "sad". A regressão linear foi aplicada para traçar uma linha divisória, e os resultados foram analisados em termos de verdadeiros negativos (TN) e falsos negativos (FN), com o objetivo de aproximar a linha para minimizar esses valores.
-    
+
 7. **Matriz de Confusão**: Foi mencionado que essa matriz é populada com verdadeiros negativos e verdadeiros positivos, permitindo análises adicionais.
-    
+
 8. **Regressão Logística**: No contexto de um exemplo em que uma célula de gordura se transforma em neurônio, a regressão logística foi apresentada como um método de classificação. Foi explicado que, embora a regressão linear possa parecer adequada para a zona de conversão, é necessário calcular o sigmoid usando a regressão linear que entra na variável z do sigmoid. A função sigmoid é dada por $1/(1 + e^(-z))$ e é preferível à regressão linear para este tipo de problema de classificação.
     
 
