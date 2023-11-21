@@ -1,7 +1,5 @@
-
 Temos auto-avaliação até 6ª
 Midterm vai ser daqui a 2 semanas ~
-
 
 Depois de termos 1 modelo:
 	Podemos colocar modelo em prod:
@@ -15,9 +13,7 @@ Grau de confiança : 95% ?
 - 
 			p-value - representa prob de observar dados num universo definido na hipótese nula 
 
-
 num exemplo em que o p_value = 0..24 temos que aceitar hipótese nula 
-
 
 Se p_value 0.0002 rejeitamos a nula , em relação ao modelo 
 é uma relação de previsão 
