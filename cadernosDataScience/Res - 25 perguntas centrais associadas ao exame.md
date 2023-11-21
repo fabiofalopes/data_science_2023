@@ -12,7 +12,7 @@ São utilizados para determinar quais variáveis independentes (predictors) pode
 - Erro do tipo I (α): é a probabilidade de se rejeitar a hipótese nula quando ela é verdadeira.
 - Erro do tipo II: é a probabilidade de se rejeitar a hipótese alternativa quando ela é verdadeira.
 
-![[Pasted image 20231121002249.png]]
+![Pasted image 20231121002249.png](Pasted image 20231121002249.png)
 
 # 4. O que entendemos por aprendizagem estatística?
 
