@@ -1,4 +1,3 @@
-Review Data Science - 25 perguntas centrais associadas ao exame
 ## 1. **Por que queremos realizar testes estatísticos nos coeficientes de um modelo linear?**
 *Resposta*: Realizamos testes estatísticos nos coeficientes de um modelo linear **para determinar se os mesmos têm um impacto significativo na variável dependente**. Isto ajuda a entender quais variáveis independentes influenciam a variável de resposta e se essa influência é estatisticamente significativa.
 

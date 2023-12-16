@@ -1,4 +1,3 @@
-Res - 25 perguntas centrais associadas ao exame
 ### 1. **Por que queremos realizar testes estatísticos nos coeficientes de um modelo linear?**
 R: Para determinar se os mesmos têm um impacto significativo na variável dependente
 
@@ -13,7 +12,7 @@ São utilizados para determinar quais variáveis independentes (predictors) pode
 - Erro do tipo I (α): é a probabilidade de se rejeitar a hipótese nula quando ela é verdadeira.
 - Erro do tipo II: é a probabilidade de se rejeitar a hipótese alternativa quando ela é verdadeira.
 
-![Pasted image 20231121002249.png](Pasted image 20231121002249.png)
+![[Pasted image 20231121002249.png]]
 
 # 4. O que entendemos por aprendizagem estatística?
 

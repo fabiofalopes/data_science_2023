@@ -6,7 +6,7 @@ Um modelo de regressão da-nos uma função que descreve a relação entre 1 ou 
 ## Como estimar f(x) ou Y
 - Não podemos obter $E(Y |X = x)!$ exatamente pois o modelo não vai traduzir exatamente o mesmo resultado.
 	- Podemos "*relaxar*" a definição anterior para:
-		$f^(x) = Ave(Y |X ∈ N (x))$
+		$f^ (x) = Ave(Y |X ∈ N (x))$
 		onde  $N(x)$ é uma vizinhança de x.
 	- Aproximação por Nearest Neighbour Averaging pode ser boa para pequenas ***p*** dimensões
 		-  i.e. p ≤ 4 and large-ish N.
@@ -45,7 +45,7 @@ O método FDR envolve os seguintes passos:
 ## Validação do modelo:
 1. Ao obter os dados, dividimos em conjuntos de treino e teste (geralmente 70:30).
 2. Minimizamos a média da soma dos quadrados dos resíduos (SSR - Sum Square Residual) para ajustar o modelo (treino).
-3. Calculamos a soma média dos quadrados dos resíduos nos dados de teste: 
+3. Calculamos a soma média dos quadrados dos resíduos (MSS) nos dados de teste: 
 	1. Por quê?
 		1. Para observar como o modelo se comporta em dados não vistos anteriormente.
 4. Se treinarmos e testarmos com os mesmos dados, o modelo pode ficar muito ajustado aos dados  de treino e ter um mau desempenho nos dados de teste, isso é chamado de **overfitting**.

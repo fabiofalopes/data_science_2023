@@ -1,6 +1,6 @@
 1. **Testes Múltiplos**: Realização de vários testes estatísticos simultaneamente no mesmo conjunto de dados.
     
-2. **Erro Tipo I**: Erro estatístico que ocorre quando a hipótese nula é incorretamente rejeitada (falso positivo).
+2. **Erro Tipo I**: Erro estatístico que ocorre quando a hipótese nula é incorrectamente rejeitada (falso positivo).
     
 3. **Regressão Linear**: Modelo estatístico usado para prever o valor de uma variável dependente com base em uma ou mais variáveis independentes.
     
