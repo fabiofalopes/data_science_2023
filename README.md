@@ -1,5 +1,88 @@
 # Conceitos 
 
+# Parte 2
+
+
+```
+Z = shc.linkage(home_data[['longitude' , 'latitude']],
+                method='complete', # 'ward', 'complete', 'average', 'single'
+                metric='euclidean'
+               )
+
+labels = shc.fcluster(
+    Z,3,
+    criterion='maxclust'
+    )
+
+plt.scatter(home_data['longitude'], home_data['latitude'],c=labels)
+
+```
+
+
+### Hierarchical Clustering: Practical Summary
+
+**Key Concepts:**
+- Hierarchical clustering is an alternative to K-means that doesn't require pre-specifying the number of clusters.
+- It creates a dendrogram, a tree-like diagram that records the sequences of merges or splits.
+
+**Interpreting a Dendrogram:**
+- Each leaf represents an observation.
+- Fusions of leaves into branches represent similar observations.
+- The height of fusion indicates the level of dissimilarity.
+- Observations that fuse at the bottom are similar; those near the top are quite different.
+- Proximity on the horizontal axis does not imply similarity.
+- Similarity is determined by the height at which the last common ancestor in the dendrogram is found.
+
+**Creating Clusters from a Dendrogram:**
+- Make a horizontal cut across the dendrogram.
+- The number of distinct sets of observations below the cut represents the number of clusters.
+- The height of the cut controls the number of clusters, similar to K in K-means.
+- Clusters obtained by cutting at a given height are nested within clusters from a higher cut.
+
+**Algorithm for Hierarchical Clustering:**
+1. Start with each observation as its own cluster.
+2. Find the pair of clusters that are least dissimilar and merge them.
+3. Repeat step 2 until all observations are in a single cluster.
+
+**Linkage Criteria (Defining Cluster Dissimilarity):**
+- **Complete Linkage:** Maximal intercluster dissimilarity.
+- **Single Linkage:** Minimal intercluster dissimilarity.
+- **Average Linkage:** Mean intercluster dissimilarity.
+- **Centroid Linkage:** Dissimilarity between the centroids of clusters.
+
+**Choice of Dissimilarity Measure:**
+- Often Euclidean distance is used, but other measures can be more appropriate depending on the context.
+- Correlation-based distance measures similarity in terms of profile shapes, not magnitudes.
+
+**Considerations for Practical Application:**
+- The choice of linkage and dissimilarity measure can greatly affect the resulting dendrogram.
+- Scaling variables to have standard deviation one before computing dissimilarities can give each variable equal importance.
+- The decision to scale variables depends on the context and the nature of the data.
+
+**When to Use Hierarchical Clustering:**
+- When the number of clusters is not known a priori.
+- When a nested set of clusters is meaningful for the analysis.
+- When a visual representation of cluster formation is helpful.
+
+**Limitations:**
+- May yield less accurate results than K-means for a given number of clusters if the true clusters are not nested.
+- The assumption of hierarchical structure might not always be realistic for the data.
+
+**Practical Tips:**
+- Examine the dendrogram to choose a sensible number of clusters.
+- Be aware of the potential for different reorderings of the dendrogram; focus on vertical distances for similarity.
+- Consider the nature of the data and the research question when choosing a dissimilarity measure and linkage method.
+
+---
+
+
+
+
+
+--- 
+
+# Parte 1
+
 ## Modelo de Regressão
 Um modelo de regressão da-nos uma função que descreve a relação entre 1 ou mais variáveis independentes e uma resposta ou variável dependente (target value).
 
