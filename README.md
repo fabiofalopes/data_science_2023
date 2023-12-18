@@ -2,8 +2,28 @@
 
 # Parte 2
 
+## Hierarchical Clustering Python
+```
+import pandas as pd
+import scipy.cluster.hierarchy as shc
+import numpy as np
+import sklearn
+import statsmodels.formula.api as smf
+```
 
 ```
+# plot data
+plt.figure(figsize=(12,8))
+plt.scatter(home_data['longitude'], home_data['latitude'])
+plt.show()
+```
+
+```
+# Linkage and plot 
+
+home_data = pd.read_csv('housing.csv')
+
+
 Z = shc.linkage(home_data[['longitude' , 'latitude']],
                 method='complete', # 'ward', 'complete', 'average', 'single'
                 metric='euclidean'
@@ -15,8 +35,37 @@ labels = shc.fcluster(
     )
 
 plt.scatter(home_data['longitude'], home_data['latitude'],c=labels)
+```
 
 ```
+# dendrogram
+
+# rc = shc.linkage(home_data[['latitude','longitude']], 'ward','euclidean')
+# fig = plt.figure(figsize=(25, 10))
+dn = shc.dendrogram(Z)
+plt.show()
+
+# or 
+fig = plt.figure(figsize=(25, 10))
+dn = shc.dendrogram(Z,color_threshold=1.5)
+plt.show()
+```
+
+# K-means python
+
+```
+kmeans = KMeans(n_clusters=20).fit_predict(home_data[['latitude','longitude']])
+# kmeans.labels_
+
+plt.scatter(home_data['longitude'], home_data['latitude'],c=kmeans)
+
+
+
+# print(kmeans)
+
+
+````
+
 
 
 ### Hierarchical Clustering: Practical Summary
