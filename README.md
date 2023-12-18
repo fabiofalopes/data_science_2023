@@ -54,18 +54,38 @@ plt.show()
 # K-means python
 
 ```
+
 kmeans = KMeans(n_clusters=20).fit_predict(home_data[['latitude','longitude']])
+
 # kmeans.labels_
 
 plt.scatter(home_data['longitude'], home_data['latitude'],c=kmeans)
-
-
 
 # print(kmeans)
 
 
 ````
 
+# k-means {prof}
+
+```
+
+#gerando o dataframe X
+X = home_data[['longitude','latitude']]`
+
+#criando modelo kmenas para 9 clusters
+#k=9
+#kmeans tem como restricao indicar a quantidade de cluster logo na criação do modelo
+kmeans = KMeans(n_clusters=9)
+
+#inserir nova coluna no dataframe X com os labels gerados pelo Kmeans
+X["Cluster"] = kmeans.fit_predict(X)
+
+#criar scatterplot sobre o modelo Kmeans
+sns.color_palette("tab10")
+g = sns.scatterplot(data=X, x="longitude", y="latitude", hue="Cluster",palette = sns.color_palette("tab10"))
+
+```
 
 
 ### Hierarchical Clustering: Practical Summary
