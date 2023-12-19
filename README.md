@@ -15,6 +15,19 @@
 | Advantages                   | - Convergence is guaranteed.<br>- Specialized to clusters of different sizes and shapes. | - Ease of handling of any forms of similarity or distance.<br>- Applicability to any attribute types.|
 | Disadvantages                | - K-Value is difficult to predict.<br>- Doesn't work well with global clusters.    | - Requires the computation and storage of an n×n distance matrix, which can be slow for large datasets.  |
 
+---
+
+![image](https://github.com/fabiofalopes/data_science_2023/assets/67275812/c9df02fd-6383-47e5-a6c0-2ca04a7928ff)
+
+---
+
+![image](https://github.com/fabiofalopes/data_science_2023/assets/67275812/56842980-f5d4-4bf7-8998-8da95aaefc89)
+
+
+![image](https://github.com/fabiofalopes/data_science_2023/assets/67275812/72e9a497-f60b-4ec1-9cd0-1287db38a040)
+
+
+---
 
 ![images/Screenshot_20231219_180649](https://github.com/fabiofalopes/data_science_2023/assets/67275812/22787051-d2fb-497b-8845-b63d8a73255b)
 
