@@ -2,6 +2,19 @@
 
 # Parte 2
 
+| Aspect                       | k-means Clustering                                                                 | Hierarchical Clustering                                                                                   |
+|------------------------------|------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| Cluster Shape                | Spherical shape clusters based on distance.                                        | No specific shape; can handle various forms of similarity or distance.                                    |
+| Number of Clusters           | Pre-specified number of clusters (K).                                               | Number of clusters can be determined by interpreting the dendrogram.                                      |
+| Cluster Representation       | Mean or median can be used as the cluster center.                                  | Nested clusters arranged as a tree.                                                                       |
+| Computation                  | Less computationally intensive, suitable for large datasets.                       | Computationally expensive due to the need for computing and storing a distance matrix.                    |
+| Initialization               | Random choice of clusters, results may differ in multiple runs.                    | Results are reproducible.                                                                                 |
+| Algorithm Type               | Non-hierarchical, partitioning method.                                             | Can be either divisive (top-down) or agglomerative (bottom-up).                                           |
+| Cluster Overlap              | Non-overlapping subsets (clusters).                                                | Set of nested clusters that are arranged as a tree.                                                       |
+| Suitability for Cluster Shape| Works well with hyper-spherical clusters.                                          | Applicable to any attribute types and can handle any forms of similarity or distance.                     |
+| Advantages                   | - Convergence is guaranteed.<br>- Specialized to clusters of different sizes and shapes. | - Ease of handling of any forms of similarity or distance.<br>- Applicability to any attribute types.|
+| Disadvantages                | - K-Value is difficult to predict.<br>- Doesn't work well with global clusters.    | - Requires the computation and storage of an n×n distance matrix, which can be slow for large datasets.  |
+
 
 ![images/Screenshot_20231219_180649](https://github.com/fabiofalopes/data_science_2023/assets/67275812/22787051-d2fb-497b-8845-b63d8a73255b)
 
