@@ -2,6 +2,10 @@
 
 # Parte 2
 
+
+![images/Screenshot_20231219_180649](https://github.com/fabiofalopes/data_science_2023/assets/67275812/22787051-d2fb-497b-8845-b63d8a73255b)
+
+
 ## Hierarchical Clustering Python
 ```
 import pandas as pd
