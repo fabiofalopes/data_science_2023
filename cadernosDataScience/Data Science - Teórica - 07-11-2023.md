@@ -98,7 +98,7 @@ identifica qual o maior p_value que é igual ou menor ao seu respetivo crit
 
 A partir dessa linha : tudo o que esta para tras, aceitamos a hipotese nula e a partir dessa linha rejeitamos
 
-
+# Kleptobrats# Kleptobrats
 
 
 ----- 

@@ -95,3 +95,28 @@ Conceito do **linkage**: que medida de proximidade para determinar distancia ent
 - Central
 
 - wait e ward : são mais complexos e nao sao o foco para ja
+
+
+--- 
+
+O resumo da aula teórica de Data Science do dia 28 de Novembro de 2023 aborda vários conceitos fundamentais em estatística e aprendizado de máquina, com foco em regressão linear e clustering hierárquico.
+
+**Regressão Linear:**
+- **Testes Estatísticos vs $R^2$ e RSE:** A aula discutiu a diferença entre usar testes estatísticos e medidas como o coeficiente de determinação ($R^2$) e o erro padrão da regressão (RSE) para avaliar modelos de regressão.
+- **RSE:** Representa a unidade de medida da variável independente e é uma forma de quantificar o erro do modelo.
+- **$R^2$:** Varia entre 0 e 1 e indica a proporção da variância explicada pelo modelo. Valores próximos de 1 indicam um bom ajuste.
+- **Outliers:** São pontos distantes mais de 3 vezes o desvio padrão da média, com a expectativa de que 75% a 90% dos dados estejam próximos da média.
+- **Estrutura de Dados e Scatter Plots:** A aula mencionou a importância de visualizar a relação entre variáveis através de gráficos de dispersão antes de avançar com a modelagem.
+- **Resíduos e Erro Padrão (SE):** O resíduo é a distância entre um ponto de dados e a linha de regressão, enquanto o SE é uma medida agregada desses desvios.
+- **Modelo de Regressão:** A minimização da soma dos resíduos ao quadrado resulta na linha de melhor ajuste.
+- **Validação do Modelo:** A razão para usar dados de teste é verificar a capacidade de generalização do modelo para novos dados.
+- **Teste de Hipótese Nula em Regressão Linear:** Testa-se a relação entre uma variável independente $x_{i}$ e a variável dependente Y.
+- **Interpretação de p-values e Erros Estatísticos:** Um p-value abaixo de 0.05 (alpha) geralmente leva à rejeição da hipótese nula. Erros de Tipo 1 ocorrem quando a hipótese nula é rejeitada incorretamente.
+
+**Clustering Hierárquico:**
+- **Clustering:** A aula abordou o conceito de clustering hierárquico, um método de análise de agrupamento não supervisionado.
+- **Medidas de Similaridade:** A importância de escolher uma medida de similaridade adequada para correlacionar pontos de dados foi destacada.
+- **Algoritmos de Clustering:** Foram discutidos os algoritmos aglomerativos que agrupam pontos de dados de forma gradual.
+- **Conceito de Linkage:** O método de linkage determina como as distâncias entre clusters são calculadas, com opções como single, complete, average e outras.
+
+A aula também mencionou a regressão logística como um exemplo de algoritmo supervisionado, em contraste com os algoritmos de clustering não supervisionados. Além disso, foram discutidos aspectos práticos como a interpretação de gráficos e a análise de p-values em relação a um critério de significância (CRIT).
